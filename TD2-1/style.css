@@ -1,0 +1,35 @@
+.main {
+    background-color: orange;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: auto 2em;
+}
+
+aside {
+    background-color: greenyellow;
+    width: 20%;
+    float: left;
+    
+}
+
+article p{
+    background-color: red;
+    column-count: 2;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 960px) {
+    article p{
+        column-count: 1;
+    }
+}

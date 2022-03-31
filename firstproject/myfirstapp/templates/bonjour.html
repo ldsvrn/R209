@@ -1,0 +1,13 @@
+<body>
+    {% if nom != "" %}
+        <h1> Hello {{nom}} </h1>
+    {% else %}
+        <h1> Hello world </h1>
+    {%endif%}
+
+    {% if age != "" %}
+        <h1> Vous avez {{age}} ans! </h1>
+    {% else %}
+        <h1> Quel est votre age? </h1>
+    {%endif%}
+</body>

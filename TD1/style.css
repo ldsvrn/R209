@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "titre1 titre1 titre1 titre1" "text1 text2 text2 text3" "text1 text4 text4 text3";
+}
+
+.titre1 {
+    grid-area: titre1;
+    background-color: rgb(255, 122, 255);
+    text-align: center;
+    color: rgb(255, 122, 255);
+}
+
+.text1 {
+    grid-area: text1;
+    background-color: aquamarine;
+    color: aquamarine;
+}
+
+.text2 {
+    grid-area: text2;
+    background-color: rgb(33, 247, 247);
+    color: rgb(33, 247, 247);
+}
+
+.text3 {
+    grid-area: text3;
+    background-color: blue;
+    color: blue;
+}
+
+.text4 {
+    grid-area: text4;
+    background-color: bisque;
+    color: bisque;
+}
+
+.galerie {
+    grid-area: galerie;
+    background-color: coral;
+    color: coral;
+}
+
+.img1 {
+    grid-area: img1;
+    background-color: darkkhaki;
+}
+
+img {
+    height: 40%;
+    width: 40%;
+}
+
+.img2 {
+    grid-area: img2;
+    background-color: darksalmon;
+}
+
+.img3 {
+    grid-area: img3;
+    background-color: grey;
+}
+
+.img4 {
+    grid-area: img4;
+    background-color: rgb(8, 71, 71);
+}
+
+.img5 {
+    grid-area: img5;
+    background-color: rgb(172, 30, 106);
+}
+
+.img6 {
+    grid-area: img6;
+    background-color: lightskyblue;
+}
+
+.img7 {
+    grid-area: img7;
+    background-color: darkolivegreen;
+}
+
+.img8 {
+    grid-area: img8;
+    background-color: greenyellow;
+}
+
+.img9 {
+    grid-area: img9;
+    background-color: rgb(49, 49, 223);
+}

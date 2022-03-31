@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block title %}Formulaire{% endblock title %}
+
+{% block h1 %}Formulaire{% endblock h1 %} 
+
+{% block sidebar %}{% endblock sidebar %}
+
+{% block content %}
+    <form action="/myfirstapp/bonjour" method="get"/>
+    {% csrf_token %}
+        <label for="nom"> Nom :</label>
+        <input type="text" name="nom"/>
+        <label for="age">Age: </label>
+        <input type="number" name="age">
+        <input type="submit" value="envoyer"/>
+    </form>
+{% endblock content %}
