@@ -24,3 +24,6 @@ def traitement(request):
         return render(request,"affiche.html",{"livre" : livre})
     else:
         return render(request,"ajout.html",{"form": lform})
+
+def show(request):
+    return render(request,"show.html",{"Livre" : models.Livre.objects.all() })
