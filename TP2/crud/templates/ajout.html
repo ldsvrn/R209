@@ -7,7 +7,7 @@
 {% comment %} {% block sidebar %}{% endblock sidebar %} {% endcomment %}
 
 {% block content %}
-<form method="post" action="traitement">
+<form method="post" action="/crud/traitement/">
     {% csrf_token %}
     {{ form.as_ul }} <!-- permet d'afficher tous les champs sous forme d'une liste-->
     <input type="submit" value="envoyer les données"\>

@@ -20,11 +20,13 @@
         </thead>
         <tbody>
         <tr>
-            <th>{{livre.id}}</th>
+            <th><a href="/crud/read/{{livre.id}}/">{{livre.id}}</th>
             <td>{{livre.titre}}</td>
             <td>{{livre.date_parution}}</td>
             <td>{{livre.nombre_pages}}</td>
             <td>{{livre.resume}}</td>
+            <td><a href="/crud/read/{{livre.id}}/">Détails</a><td>
+            <td><a href="/crud/update/{{livre.id}}/">Modifier</a><td>
         </tr>
         </tbody>
     </table>

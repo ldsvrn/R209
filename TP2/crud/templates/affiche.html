@@ -3,9 +3,11 @@
 {% block title %}Ajouté un livre{% endblock title %}
 
 {% block h1 %}
-    Vous avez ajouté le livre suivant {{livre}} (ID: {{livre.id}})
+    Vous avez ajouté un livre!
 {% endblock h1 %} 
 
 {% comment %} {% block sidebar %}{% endblock sidebar %} {% endcomment %}
 
-{% block content %}{% endblock content %}
+{% block content %}
+    <p>Vous avez ajouté un livre suivant: {{livre}} (ID: {{livre.id}})</p>
+{% endblock content %}
