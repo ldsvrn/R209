@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+{% block title %}Détails de livre{% endblock title %}
+
+{% block h1 %}
+    Détails de livre:
+{% endblock h1 %} 
+
+{% comment %} {% block sidebar %}{% endblock sidebar %} {% endcomment %}
+
+{% block content %}
+    <p>{{livre}} (ID: {{livre.id}})</p>
+    <a href="/crud/update/{{livre.id}}">Modifier</a>
+{% endblock content %}

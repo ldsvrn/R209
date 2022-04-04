@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+{% block title %}Modifier un livre{% endblock title %}
+
+{% block h1 %}Modifier un livre{% endblock h1 %} 
+
+{% comment %} {% block sidebar %}{% endblock sidebar %} {% endcomment %}
+
+{% block content %}
+<form method="post" action="/crud/updatedb/{{id}}/">
+    {% csrf_token %}
+    {{ form.as_ul }} <!-- permet d'afficher tous les champs sous forme d'une liste-->
+    <input type="submit" value="envoyer les données"\>
+</form>
+{% endblock content %}
